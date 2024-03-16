@@ -1,0 +1,356 @@
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .top-left-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    font-weight: normal;
+    margin-left: 30px; /* Adjust as necessary */
+    font-size: 20px; /* Adjust this value to make the font smaller or larger */
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-pic {
+    width: 512px; /* Adjust as necessary */
+    height: 342px;
+    margin-right: 100px;
+    margin-left: -20px; /* Adds space to the left, moving the photo to the right */
+    margin-top: 10px; /* Moves content up; adjust as needed */
+  }
+  
+  .profile-info {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2; /* Adjust this value for more or less space between lines */
+    font-weight: bold;
+    margin-right: -150px;
+    margin-top: 10px; /* Moves content up; adjust as needed */
+  }
+  
+  .normal-weight {
+    font-weight: normal; /* This overrides the bold for your specific content */
+  }
+
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-weight: normal;
+    margin-right: 30px; /* Adjust as necessary */
+    font-size: 18px; /* Adjust this value to make the font smaller or larger */
+  }
+  
+  nav li {
+    display: inline;
+    margin-left: 20px; /* Adjust spacing between items */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(70, 67, 67); /* Adjust as needed */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Adjusts vertical alignment */
+    padding-top: 100px; /* Adjust this to increase/decrease space from top */
+    height: auto; /* Allows container to grow with content */
+    min-height: 100vh; /* Ensures it's at least full height of the viewport */
+    /* padding-right: 0px; */
+  }
+  
+  .top-bar {
+    width: 100%;
+    position: fixed; /* Keeps the top-bar at the top */
+    top: 0;
+    z-index: 100; /* Ensures it's above other content */
+    /* border-bottom: 2px solid #000; */
+  }   
+ 
+
+  /* Home*/
+  .profile {
+    width: 80%; /* Adjust width as needed */
+    margin-top: 5px; /* Space between top-bar and content */
+    padding: 20px;
+    margin-right: 100px;
+    margin-left: 5px; /* Adds space to the left, moving the photo to the right */
+  }
+  
+
+
+  /* Research */
+  .research {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Adjusts vertical alignment */
+    padding-top: 550px; /* Adds space at the top */
+    /* padding-left: 100px; */
+  }
+  
+  .research-info {
+    max-width: 1000px; /* Adjusts the width */
+    margin: auto;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 1.2; /* Adjust this value for more or less space between lines */
+    font-weight: normal;
+    /* margin: auto; */
+    /* padding-left: 5%; */
+    /* padding-right: 20%; */
+  }
+  
+  .bold-weight {
+    font-weight: bold; /* This overrides the bold for your specific content */
+  }
+
+  
+  .research {
+    width: 80%; /* Adjust width as needed */
+    margin-top: -42px; /* Space between top-bar and content */
+    padding: 20px;
+    /* margin-right: 100px;
+    margin-left: 65px; */
+    /* padding-left: -50%; */
+  }
+  
+
+
+  /* Top bar color */
+  .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Or any other color you prefer */
+    /* transition: background-color 0.3s, color 0.3s; Smooth transition */
+    z-index: 10; /* Ensures the header is above other content */
+    padding: 30px 0; /* This adds some vertical padding inside the header */
+  }
+  
+  .top-bar h1 {
+    color: black; /* This ensures the text inside the header is white */
+  }
+  
+  .top-bar nav a {
+    color: rgb(70, 67, 67); /* This ensures the text inside the header is white */
+  }
+
+  /* Make sure to add appropriate styles for when .top-bar has the .scrolled class */
+  .top-bar.scrolled {
+    background-color: black; /* Or the color you want when scrolled */
+    /* color: white; */
+  }
+  
+  .top-bar.scrolled h1, .top-bar.scrolled a {
+    /* background-color: black; Scrolled background color */
+    color: white;
+  }
+ 
+
+  /* Top bar current page color */
+  .top-bar.scrolled nav a.current {
+    color: rgb(80, 167, 238); /* Change the color to blue */
+    font-weight: bold;
+  }
+
+  .top-bar nav a.current {
+    color: black;
+    font-weight: bold;
+  }
+
+  .top-bar.scrolled nav a:hover {
+    color: rgb(80, 167, 238); /* Change the color to blue on hover */
+  }
+  
+  .top-bar nav a:hover {
+    color: black; /* Change the color to blue on hover */
+  }
+
+
+  /* Style for devices with width less than 600px */
+  @media (max-width: 600px) {
+    .profile-pic {
+      width: 95%; 
+      height: auto;
+      align-items: center;
+      /* justify-content: center; */
+      /* display: block; */
+      /* padding: 0; */
+      margin-top: 50px;
+      margin-right: 0;
+      margin-left: 100px;
+      /* margin: 20px auto; */
+      /* display: inline-block; */
+    }
+
+    .profile, .research-info {
+      flex-direction: column; /* Stack elements vertically */
+      /* align-items: center; */
+    }
+
+    /* .profile-info {
+      flex-direction: row;
+    } */
+  
+    nav ul {
+      flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .research {
+      width: 95%; /* Adjusts width for smaller screens */
+      margin-top: 0px; /* Adjusts spacing for smaller screens */
+      margin-right: 0px;
+      margin-left: 0px;
+      /* margin: 0; */
+    }
+
+    .profile-info {
+      width: 95%; /* Adjusts width for smaller screens */
+      margin-top: 30px;
+      margin-right: 0px;
+      margin-left: 100px;
+      /* margin: 0; */
+      /* margin: 20px auto; */
+      /* display: inline-block; */
+      align-items: center;
+      justify-content: center;
+    }
+
+    .top-bar {
+      background-color: rgb(224, 223, 223); /* Or the color you want when scrolled */
+      border-bottom: 2px solid #000;
+      /* color: white; */
+    }
+
+    .container {
+      display: flex;
+      /* flex-direction: row; */
+      /* align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      height: auto;
+      min-height: 100vh; */
+     /* padding-right: 0px; */
+    }
+  }
+
+
+  /* Style for the hamburger menu icon */
+
+  .hamburger-menu {
+    position: absolute; /* Positions the hamburger menu out of the document flow and relative to the .top-bar */
+    top: 0; /* Aligns the top of the button with the top of the .top-bar */
+    right: 0; /* Aligns the right of the button with the right of the .top-bar */
+    padding: 20px; /* Adds some space around the icon for easier tapping on touch devices */
+    font-size: 24px; /* Adjusts the size of the hamburger icon */
+    background: none; /* Removes any background */
+    border: none; /* Removes any border */
+    margin: -6px;
+    margin-right: 10px;
+    display: none; /* Hidden by default */
+    cursor: pointer; /* Changes cursor to a pointer hand */
+    z-index: 2;
+    color: black;
+  }
+
+  .top-bar.scrolled button {
+    /* background-color: black; Scrolled background color */
+    color: white;
+  }
+
+
+
+  /* Side Navigation Menu Container 20240316 */
+
+  @media only screen and (max-width: 600px) {
+
+    .navigation ul li a {
+      color: white; /* Ensures the text color is white */
+      /* Other styles... */
+    }
+
+    .side-nav-container {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      /* background: #000; */
+      background-color: rgba(0, 0, 0, 0.9); 
+      transition: right 0.3s; 
+      z-index: 1; /* Below the hamburger menu but above other content */
+    }
+
+    .side-nav-container.active {
+      right: 0; /* Brings the side menu on-screen */
+    }
+
+    .side-nav-container.active .navigation ul li a {
+      color: white; /* This will change the text color of navigation items to white */
+    }
+
+    .hamburger-menu {
+      display: block; /* Shows the hamburger menu icon */
+    }
+
+    .hamburger-menu.active {
+      color: white; /* This ensures the hamburger menu is visible when the sidebar is active */
+    }
+
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .navigation ul {
+      display: none; /* Initially hides the navigation menu */
+      flex-direction: column; /* Stacks the navigation items vertically */
+      width: 100%; /* Ensures the menu uses the full available width */
+      text-align: center; /* Centers the navigation items */
+    }
+
+    .side-nav-container.active .navigation ul {
+      display: flex; /* Displays the navigation menu when active */
+    }
+
+    .navigation ul li {
+      display: block; /* Ensures each navigation item takes up its own line */
+    }
+
+    .navigation ul li a {
+      display: block; /* Makes the link fill the entire list item for easier tapping */
+      padding: 10px; /* Adds some padding for spacing and larger tap targets */
+      width: 100%; /* Ensures links use the full width, aiding in tap-ability */
+    }
+
+    .side-nav-container.active .navigation ul li a.current {
+      color: rgb(80, 167, 238); /* Change the color to blue */
+      font-weight: bold;
+    }
+  
+    .side-nav-container.active .navigation ul li a:hover {
+      color: rgb(80, 167, 238); /* Change the color to blue on hover */
+    }
+  
+  }
