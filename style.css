@@ -143,10 +143,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent; /* Or any other color you prefer */
+    /* background-color: transparent; */
     /* transition: background-color 0.3s, color 0.3s; Smooth transition */
     z-index: 10; /* Ensures the header is above other content */
     padding: 30px 0; /* This adds some vertical padding inside the header */
+    background-color: rgb(224, 223, 223); /* Or the color you want when scrolled */
+    border-bottom: 1px solid #000;
   }
   
   .top-bar h1 {
@@ -240,7 +242,7 @@ body {
 
     .top-bar {
       background-color: rgb(224, 223, 223); /* Or the color you want when scrolled */
-      border-bottom: 2px solid #000;
+      border-bottom: 1px solid #000;
       /* color: white; */
     }
 
@@ -354,3 +356,5 @@ body {
     }
   
   }
+
+  
