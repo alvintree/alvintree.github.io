@@ -43,7 +43,10 @@ body {
     font-weight: normal; /* This overrides the bold for your specific content */
   }
 
-  
+  .italic-text {
+    font-style: italic;
+  }
+
   nav ul {
     list-style-type: none;
     padding: 0;
