@@ -29,21 +29,16 @@ function declineCookies() {
 }
 
 function initAnalytics() {
-  // Initialize your analytics tracking here
+  // Google Analytics is already initialized in the HTML <head>
+  // This function now just logs that consent was given
   console.log('Analytics initialized - cookie consent accepted');
   
-  // Example: Google Analytics 4
-  // Uncomment and add your Measurement ID
-  
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-YH5TSY3JKM');
-  
-  // You can also add other analytics tools here:
-  // - Plausible Analytics
-  // - Matomo
-  // - Custom tracking solution
+  // If you want to send a custom event when user accepts cookies:
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'cookie_consent', {
+      'consent_status': 'accepted'
+    });
+  }
 }
 
 // Check cookie consent on page load
