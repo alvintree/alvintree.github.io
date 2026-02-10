@@ -119,13 +119,13 @@ body {
 
 .profile-container {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 3rem;
   align-items: start;
 }
 
 .profile-image-container {
-  position: sticky;
+  position: fixed;
   top: 2rem;
   align-self: start;
   height: fit-content;  
