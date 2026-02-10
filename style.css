@@ -126,11 +126,11 @@ body {
 }
 
 .profile-image-container {
-  position: fixed;
-  left: calc(240px + 4rem + 0rem);
+  position: relative;
+  /* left: calc(240px + 4rem + 0rem); */
   top: 6rem;
-  width: 100px;
-  z-index: 50;
+  /* width: 100px;
+  z-index: 50; */
 }
 
 .profile-image {
