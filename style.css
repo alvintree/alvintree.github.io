@@ -128,7 +128,7 @@ body {
 .profile-image-container {
   position: relative;
   /* left: calc(240px + 4rem + 0rem); */
-  top: 6rem;
+  top: 2rem;
   /* width: 200px;
   z-index: 50; */
 }
