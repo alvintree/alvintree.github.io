@@ -398,11 +398,11 @@ body {
   .profile-container {
     /* grid-template-columns: 1fr;
     gap: 2rem; */
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 200px 1fr;
     gap: 2rem;
-    align-items: start;
-    position: relative;
+    /* align-items: start;
+    position: relative; */
   }
 
   .profile-image-container {
